@@ -1,7 +1,38 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<title>yetaoran</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+		<link href="css/jquery.fullpage.min.css" rel="stylesheet">
+	</head>
+	
+	
+	<body>
+		<div id="fullpage">
+			<div class="section intro">
+				<div class="warp-intro">				
+					<div class="col-xs-2"></div>
+					<object data="logo-raw.svg" type="image/svg+xml" class="col-xs-8">				
+					</object>
+					<div class="col-xs-2"></div>					
+				</div>
+			</div>
+			<div class="section">Some section</div>
+			<div class="section">Some section</div>
+			<div class="section">Some section</div>
+		</div>
+	</body>
+	
+    <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fullpage.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('#fullpage').fullpage();
+	});
+	</script>
+	
 </html>
