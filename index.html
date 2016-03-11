@@ -14,12 +14,58 @@
 	<body>
 		<div id="fullpage">
 			<div class="section intro">
+				<div id="social">
+					<a href="#">
+						<i class="iconfont iconfont1">&#xe601;</i>
+					</a>
+					<div class="div_line"></div>
+					<a href="#">
+						<i class="iconfont iconfont2">&#xe600;</i>
+					</a>
+	
+				</div>
 				<div class="warp-intro">				
 					<div class="col-xs-2"></div>
-					<object data="logo-raw.svg" type="image/svg+xml" class="col-xs-8">				
-					</object>
-					<div class="col-xs-2"></div>					
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						  viewBox="0 0 471 194" enable-background="new 0 0 471 194" xml:space="preserve" class="col-xs-8 sp1">
+					<polygon fill="#FEC700" points="0,80 42.07,0 84,80 "/>
+					<polygon fill="#E5005B" points="387,194 429.07,114 471,194 "/>
+					<g>
+						<g>
+							<rect x="107" fill="#009FE3" width="22" height="80"/>
+							<circle fill="#009FE3" cx="129" cy="20" r="20"/>
+							<circle fill="#009FE3" cx="129" cy="60" r="20"/>
+						</g>
+					</g>
+					<circle fill="#E84E0F" cx="217.334" cy="40" r="40"/>
+					<g>
+						<circle fill="#007BC4" cx="323" cy="40" r="40"/>
+						<rect x="283" fill="#007BC4" width="80" height="40"/>
+					</g>
+					<polygon fill="#FEC700" points="391,0 391,31 418,18 418,80 444,80 444,18 471,31 471,0 "/>
+					<polygon fill="#E84E0F" points="198,114 198,145 225,132 225,194 251,194 251,132 278,145 278,114 "/>
+					<g>
+						<rect x="28" y="135" fill="#007BC4" width="28" height="59"/>
+						<polygon fill="#007BC4" points="84,168 0,168 0,114 42.07,135 84,114 	"/>
+					</g>
+					<g>
+						<g>
+							<polygon fill="#FEC700" points="172,194 172,168.642 107,154 107,194 		"/>
+							<polygon fill="#FEC700" points="172,114 107,114 107,154 172,139.359 		"/>
+						</g>
+					</g>
+					<path fill="#9ABD36" d="M367,144c0-16.568-13.432-30-30-30h-35v80h35h30l-30-20C353.568,174,367,160.568,367,144z"/>
+					</svg>
+
+					<div class="col-xs-2"></div>
+					
+					<div class="col-xs-12 text-center">
+						<div class="next"><i class="iconfont iconfont3">&#xe606;</i></div>
+					</div>
+							
 				</div>
+
+
 			</div>
 			<div class="section">Some section</div>
 			<div class="section">Some section</div>
@@ -31,8 +77,11 @@
 	<script src="js/jquery.fullpage.min.js"></script>
 	<script>
 	$(document).ready(function() {
-		$('#fullpage').fullpage();
-	});
+		$('#fullpage').fullpage()
+	})
+	$('.next').hover(function(){
+		$(this).children().toggleClass('go')
+	})
 	</script>
 	
 </html>
