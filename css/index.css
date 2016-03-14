@@ -17,6 +17,48 @@ html{
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;}
 
+.col-md-25 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.sp1{
+	padding:0;
+}
+
+.md-show{
+	display: none;
+}
+
+.hrefsm:hover,.hrefsm:active{
+	text-decoration: none;
+	color: #e34d42;
+}
+
+.hrefsm{
+	display: inline-block;
+	margin-top:3rem;
+}
+
+@media (min-width: 992px) {
+	.col-md-25 {
+	float: left;
+	width: 20.833333335%;
+	}
+	
+	.md-show{
+		display: block;
+	}
+	
+	.md-dis{
+		display: none;
+	}
+	
+
+}
+
 .intro{
 	background:#f8f5ef;
 }
@@ -38,19 +80,14 @@ html{
 	padding:0 6%;
 	margin-top: 4%;
 	display: inline-block;
+	cursor: pointer;
 }
 
 .next:hover{
 	background-color:#007bc3;
 }
 
-.sp1{
-	padding:0 4%;
-}
 
-.sp2{
-	
-}
 
 #social{
 	position: absolute;
