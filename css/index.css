@@ -10,6 +10,10 @@ html{
     url('../assest/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
+@font-face {font-family: 'brandon';
+    src: url('../assest/brandon_light-webfont.woff') format('woff'); /* chrome、firefox */
+}
+
 .iconfont{
     font-family:"iconfont" !important;
     font-size:16px;font-style:normal;
@@ -24,12 +28,18 @@ html{
   padding-left: 15px;
 }
 
+
+
 .sp1{
 	padding:0;
 }
 
 .md-show{
 	display: none;
+}
+
+.slide{
+	position: relative;
 }
 
 .hrefsm:hover,.hrefsm:active{
@@ -42,7 +52,36 @@ html{
 	margin-top:3rem;
 }
 
+.hi{
+	position: absolute;
+	top:10%;
+	left:36%;
+	font-family: 'brandon';
+	font-size: 4rem;
+	color: #009fe3;
+}
+
+#planeMachine{
+	height: 300px;
+}
+
+@media (min-width: 768px) {
+	
+	.hi{
+		font-size:8rem;
+	}	
+	.col-ytr-45 {
+	  position: relative;
+	  min-height: 1px;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	  float: left;
+	  width: 37.5%;
+	}
+}
+
 @media (min-width: 992px) {
+	
 	.col-md-25 {
 	float: left;
 	width: 20.833333335%;
@@ -59,11 +98,22 @@ html{
 
 }
 
+
+
+
 .intro{
 	background:#f8f5ef;
 }
 
+.yellow2{
+	background: #eec22f;
+}
+
 .warp-intro{
+}
+
+.oop{
+	padding:0 22%;
 }
 
 .container.sp{
