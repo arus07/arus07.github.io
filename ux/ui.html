@@ -146,6 +146,7 @@
                         <div class="fontBlock">
                             <div class="littletitle">背景颜色</div>
                             <span class="color03">#B5B5B5</span>
+                            <span class="color07">#F7F7F7</span>
                         </div>
                         <div class="fontBlock">
                             <div class="littletitle">边框颜色</div>
@@ -156,6 +157,9 @@
                 </div>
                 <div class="main-block">
                     <h3>按钮及交互规范</h3>
+                    <div class="subtitle mt40 mb20">
+                        <span>样式</span>
+                    </div>
                     <div class="clearfix">
                         <div class="btnBlock">
                             <span class="normal-btn mb15">默认按钮</span>
@@ -224,6 +228,37 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cut-line"></div>
+                    <div class="subtitle mt40 mb20">
+                        <span>按钮大小</span>
+                    </div>
+                    <div class="clearfix">
+                        <div class="btnBlock">
+                            <span class="primary-btn mb15">主要按钮</span>
+                            <span class="assist">正常按钮</span>
+                        </div>
+                        <div class="btnBlock">
+                            <span class="primary-btn sm mb15">主要按钮</span>
+                            <span class="assist">小按钮</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-block p20sp">
+                    <h3>Input</h3>
+                    <div class="clearfix">
+                        <div class="inputBlock">
+                            <input type="text" placeholder="请输入内容" class="form-control mb15">
+                            <input type="text" placeholder="请输入内容" class="form-control hover mb15">
+                            <input type="text" placeholder="请输入内容" class="form-control focus mb15">
+                            <input type="text" placeholder="请输入内容" class="form-control" disabled>
+                        </div>
+                        <div class="inputBlock">
+                            <span class="comment mb15"></span>
+                            <span class="comment mb15">hover</span>
+                            <span class="comment mb15">focus</span>
+                            <span class="comment">disabled</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="main-block p20sp">
                     <h3>开关</h3>
@@ -245,44 +280,69 @@
                     </div>
                 </div>
                 <div class="main-block p20sp">
-                    <h4>checkboxes</h4>
-                    <div class="row">
-                        <div class="col-md-1">
-                            <div class="checkbox cb-checkbox">
-                                <label>
-                                    <input type="checkbox" value="">
-                                    <span class="iconfont icon-check vertical-m"></span>
-                                    <span class="vertical-m">记住密码</span>
-                                </label>
-                            </div>
+                    <h4>Checkbox</h4>
+                    <div class="clearfix">
+                        <div class="checkbox cb-checkbox float-left mr50">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="iconfont icon-check vertical-m"></span>
+                                <span class="vertical-m">记住密码</span>
+                            </label>
                         </div>
-                        <div class="col-md-1">
-                            <div class="checkbox cb-checkbox">
-                                <label>
-                                    <input type="checkbox" value="" checked="">
-                                    <span class="iconfont icon-check vertical-m"></span>
-                                    <span class="vertical-m">记住密码</span>
-                                </label>
-                            </div>
+                        <div class="checkbox cb-checkbox float-left mr50">
+                            <label>
+                                <input type="checkbox" value="" checked="">
+                                <span class="iconfont icon-check vertical-m"></span>
+                                <span class="vertical-m">记住密码</span>
+                            </label>
                         </div>
-                        <div class="col-md-1">
-                            <div class="checkbox cb-checkbox">
-                                <label>
-                                    <input type="checkbox" value="" disabled="">
-                                    <span class="iconfont icon-check vertical-m"></span>
-                                    <span class="vertical-m">不可选</span>
-                                </label>
-                            </div>
+                        <div class="checkbox cb-checkbox float-left mr50">
+                            <label>
+                                <input type="checkbox" value="" disabled="">
+                                <span class="iconfont icon-check vertical-m"></span>
+                                <span class="vertical-m">不可选</span>
+                            </label>
                         </div>
-                        <div class="col-md-1">
-                            <div class="checkbox cb-checkbox">
-                                <label>
-                                    <input type="checkbox" value="" disabled="" checked="">
-                                    <span class="iconfont icon-check vertical-m"></span>
-                                    <span class="vertical-m">不可选</span>
-                                </label>
-                            </div>
+                        <div class="checkbox cb-checkbox float-left mr50">
+                            <label>
+                                <input type="checkbox" value="" disabled="" checked="">
+                                <span class="iconfont icon-check vertical-m"></span>
+                                <span class="vertical-m">不可选</span>
+                            </label>
                         </div>
+                    </div>
+                </div>
+                <div class="main-block p20sp">
+                    <h4>Radio</h4>
+                    <div class="radio-inline c-radio">
+                        <label>
+                            <input type="radio" value="option1" name="i-radio" checked="">
+                            <span>
+                                <svg width="10" class="radio-circle" viewBox="0 0 272.3 272.3">
+                                    <circle cx="136.1" cy="136.1" r="136.1"></circle>
+                                </svg>
+                            </span>备选项
+                        </label>
+                    </div>
+                    <div class="radio-inline c-radio">
+                        <label>
+                            <input type="radio" value="option2" name="i-radio">
+                            <span>
+                                <svg width="10" class="radio-circle" viewBox="0 0 272.3 272.3">
+                                    <circle cx="136.1" cy="136.1" r="136.1"></circle>
+                                </svg>
+                            </span>备选项
+                        </label>
+                    </div>
+                    <div class="radio-inline c-radio">
+                        <label>
+                            <input type="radio" value="option3" name="i-radio">
+                            <span>
+                                <svg width="10" class="radio-circle" viewBox="0 0 272.3 272.3">
+                                    <circle cx="136.1" cy="136.1" r="136.1"></circle>
+                                </svg>
+                            </span>备选项
+                        </label>
                     </div>
                 </div>
                 <div class="main-block p20sp">
