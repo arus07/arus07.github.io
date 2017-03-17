@@ -27,7 +27,7 @@
     <section class="ui-section">
         <div data-animate="in" class="app ng-fadeInLeft2 ng-enter">
             <div>
-                <div class="main-block">
+                <div class="new-block">
                     <h3>字体家族</h3>
                     <div class="subtitle">
                         <span>中文字体族</span>
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-block">
+                <div class="new-block">
                     <h3>颜色</h3>
                     <div class="subtitle mt40 mb20">
                         <span>色彩倾向及其含义</span>
@@ -155,10 +155,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-block">
+                <div class="new-block">
                     <h3>按钮及交互规范</h3>
                     <div class="subtitle mt40 mb20">
-                        <span>样式</span>
+                        <span>基础用法</span>
                     </div>
                     <div class="clearfix">
                         <div class="btnBlock">
@@ -229,21 +229,48 @@
                         </div>
                     </div>
                     <div class="cut-line"></div>
-                    <div class="subtitle mt40 mb20">
-                        <span>按钮大小</span>
-                    </div>
                     <div class="clearfix">
-                        <div class="btnBlock">
-                            <span class="primary-btn mb15">主要按钮</span>
-                            <span class="assist">正常按钮</span>
+                        <div class="btnBlock2">
+                            <div class="subtitle mb20">
+                                <span>按钮大小</span>
+                            </div>
+                            <div class="clearfix">
+                                <div class="btnBlock">
+                                    <span class="primary-btn mb15">主要按钮</span>
+                                    <span class="assist">正常按钮</span>
+                                </div>
+                                <div class="btnBlock">
+                                    <span class="primary-btn sm mb15">主要按钮</span>
+                                    <span class="assist">小按钮</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btnBlock">
-                            <span class="primary-btn sm mb15">主要按钮</span>
-                            <span class="assist">小按钮</span>
+                        <div class="btnBlock2">
+                            <div class="subtitle mb20">
+                                <span>hover含颜色属性的默认按钮</span>
+                            </div>
+                            <div class="clearfix">
+                                <div class="btnBlock">
+                                    <span class="normal-btn mb15">默认按钮</span>
+                                    <span class="assist">default</span>
+                                </div>
+                                <div class="btnBlock">
+                                    <span class="normal-btn positive mb15">默认按钮</span>
+                                    <span class="assist">positive</span>
+                                </div>
+                                <div class="btnBlock">
+                                    <span class="normal-btn warning mb15">默认按钮</span>
+                                    <span class="assist">warning</span>
+                                </div>
+                                <div class="btnBlock">
+                                    <span class="normal-btn negative mb15">默认按钮</span>
+                                    <span class="assist">negative</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="main-block p20sp">
+                <div class="new-block p20sp">
                     <h3>Input</h3>
                     <div class="clearfix">
                         <div class="inputBlock">
@@ -260,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-block p20sp">
+                <div class="new-block p20sp">
                     <h3>开关</h3>
                     <div class="clearfix">
                         <div class="switchBlock">
@@ -279,8 +306,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-block p20sp">
-                    <h4>Checkbox</h4>
+                <div class="new-block p20sp">
+                    <h3>Checkbox</h3>
                     <div class="clearfix">
                         <div class="checkbox cb-checkbox float-left mr50">
                             <label>
@@ -312,8 +339,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-block p20sp">
-                    <h4>Radio</h4>
+                <div class="new-block p20sp">
+                    <h3>Radio</h3>
                     <div class="radio-inline c-radio">
                         <label>
                             <input type="radio" value="option1" name="i-radio" checked="">
@@ -345,30 +372,48 @@
                         </label>
                     </div>
                 </div>
-                <div class="main-block p20sp">
+                <div class="new-block p20sp">
                     <h3>导航</h3>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="pagination ng-table-pagination">
-                                <li class="disabled">
-                                    <a href="#">«</a>
-                                </li>
-                                <li class="disabled">
-                                    <a href="#"><span>1</span></a>
-                                </li>
+                    <ul class="pagination ng-table-pagination">
+                        <li class="disabled">
+                            <a href="#">«</a>
+                        </li>
+                        <li class="disabled">
+                            <a href="#"><span>1</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><span>2</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>3</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>4</span></a>
+                        </li>
+                        <li>
+                            <a href="#">»</a>
+                        </li>
+                    </ul>
+                    <div class="cut-line"></div>
+                    <div class="littletitle">卡片式tab</div>
+                    <div class="main-block">
+                        <nav class="tab-panel">
+                            <ul class="nav nav-tabs">
                                 <li class="active">
-                                    <a href="#"><span>2</span></a>
+                                    <a href="#first" data-toggle="tab">标签页1</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span>3</span></a>
+                                    <a href="#second" data-toggle="tab">标签页2</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span>4</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">»</a>
+                                    <a href="#third" data-toggle="tab">标签页3</a>
                                 </li>
                             </ul>
+                        </nav>
+                        <div class="tab-content">
+                            <div id="first" class="tab-pane active fade in">标签页1内容</div>
+                            <div id="second" class="tab-pane fade">标签页2内容</div>
+                            <div id="third" class="tab-pane fade">标签页3内容</div>
                         </div>
                     </div>
                 </div>
