@@ -271,19 +271,44 @@
                     </div>
                 </div>
                 <div class="new-block p20sp">
+                    <h3>Tags</h3>
+                    <span class="tags-yellow">标签1</span>
+                    <span class="tags-pink">标签2</span>
+                    <span class="tags-purple">标签3</span>
+                </div>
+                <div class="new-block p20sp">
                     <h3>Input</h3>
                     <div class="clearfix">
                         <div class="inputBlock">
+                            <div class="littletitle">基础用法</div>
                             <input type="text" placeholder="请输入内容" class="form-control mb15">
                             <input type="text" placeholder="请输入内容" class="form-control hover mb15">
                             <input type="text" placeholder="请输入内容" class="form-control focus mb15">
                             <input type="text" placeholder="请输入内容" class="form-control" disabled>
                         </div>
-                        <div class="inputBlock">
+                        <div class="inputBlock mt50">
                             <span class="comment mb15"></span>
                             <span class="comment mb15">hover</span>
                             <span class="comment mb15">focus</span>
                             <span class="comment">disabled</span>
+                        </div>
+                        <div class="float-left w300">
+                            <div class="littletitle">复合型输入框</div>
+                            <div class="input-group">
+                                <div class="input-group-btn dropdown department-dropdown">
+                                    <button type="button" data-toggle="dropdown" id="dropdownMenu1" class="btn btn-drop dropdown-toggle" aria-expanded="false">
+                                        <span class="text">选择部门</span>
+                                        <input type="hidden" name="department" placeholder="请选择部门" data-error="5">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu sp department-dropdown-menu"></ul>
+                                </div>
+                                <div class="dropdown w200">
+                                    <input name="user" class="hidden">
+                                    <ul class="dropdown-menu hidden"></ul>
+                                    <input placeholder="请输入工号或姓名" data-toggle="dropdown" data-action="complete-employee" class="form-control" aria-expanded="false">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
